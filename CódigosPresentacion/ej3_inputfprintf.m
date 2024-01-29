@@ -1,3 +1,4 @@
+%% uso de input
 % Introducción de valores numéricos:
 a = input('Ingrese un valor númerico: ');
 
@@ -5,7 +6,7 @@ a = input('Ingrese un valor númerico: ');
 b = input('Ingrese una oración: ','s');
 
 
-% uso de fprintf
+%% uso de fprintf
 % s para datos tipo caracter
 % f para mostrar número forma decimal
 fprintf('Su oración es: %s y su número es %f\n',b,a) 
@@ -15,3 +16,13 @@ fprintf('Su oración es: %s y su número es %g\n',b,a)
 fprintf('Su oración es: %s y su número es %4.2f\n',b,a)
 % e notación científica.
 fprintf('Su oración es: %s y su número es %e\n',b,a)
+
+
+%% uso de disp
+% mostrar un número
+disp(a)
+
+% mostrar un texto
+disp(b)
+
+% Utiliza la forma que tiene por default la consola
