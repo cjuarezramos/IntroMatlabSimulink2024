@@ -6,8 +6,8 @@ if nargin==1
 elseif nargin == 2
     y=-b/a;
 elseif nargin == 3
-    y(1)=(-b+sqrt(b^2+4*a*c))/2/a;
-    y(2)=(-b-sqrt(b^2+4*a*c))/2/a;
+    y(1)=(-b+sqrt(b^2-4*a*c))/2/a;
+    y(2)=(-b-sqrt(b^2-4*a*c))/2/a;
 else
     disp('Muchos argumentos')
 end
