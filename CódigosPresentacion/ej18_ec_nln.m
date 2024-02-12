@@ -12,10 +12,17 @@ end
 
 switch metodosol
     case 'secante'
-         x=0;i=1;v_x=2;
+         [x,i,v_x]=ej18_secante(val1,val2,tol);
 
     case 'biseccion'
-        x=3;i=4;v_x=5;
+        global inf sup tolerancia raiz iteracion vector_raiz
+        inf = val1;
+        sup = val2;
+        tolerancia = tol;
+        ej18_biseccion
+        x = raiz;
+        i = iteracion;
+        v_x = vector_raiz;
 
     otherwise
         disp('error')
